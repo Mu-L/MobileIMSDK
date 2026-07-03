@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+target 'SwiftMobileIMSDK' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for SwiftMobileIMSDK
+
+    # socket
+    pod 'CocoaAsyncSocket', '~> 7.6.5'
+    
+    # 网络请求状态
+    pod 'ReachabilitySwift', '~> 5.0.0'
+    
+    # json
+    pod 'HandyJSON', '~> 5.0.2'
+    
+    # 指示器
+    pod 'ProgressHUD', '~> 13.6'
+    
+    # 弹框
+    pod 'PopupDialog', '~> 1.1'
+
+end
