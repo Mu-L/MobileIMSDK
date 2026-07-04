@@ -182,17 +182,12 @@
 
 ![](preview/uniapp_demo_main.png)
 
-### 6、MobileIMSDK Demo在Windows 运行效果：
+### 6、MobileIMSDK Demo在PC桌面端运行效果（跨平台）：
 > <code>安装和使用：</code>[进入Java版Demo帮助页](http://www.52im.net/thread-56-1-1.html)。
 
 ![](preview/java_demo_main.png)
 
-### 7、MobileIMSDK Demo在Mac OS X 运行效果：
-> <code>安装和使用：</code>[进入Java版Demo帮助页](http://www.52im.net/thread-56-1-1.html)。
-
-![](preview/more_screenshots/others/mac_real_run.png)
-
-### 8、MobileIMSDK-Web版客户端Demo运行效果：
+### 7、MobileIMSDK-Web版客户端Demo运行效果：
 > <code>查看MobileIMSDK-Web版详情：</code>[点此进入](http://www.52im.net/thread-959-1-1.html)。
 
 ![](preview/mibileimsdk_web_demo_on_mobile_browsers.jpg)
