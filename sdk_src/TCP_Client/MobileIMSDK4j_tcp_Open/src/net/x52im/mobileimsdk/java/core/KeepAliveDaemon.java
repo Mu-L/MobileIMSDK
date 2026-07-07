@@ -62,19 +62,13 @@ public class KeepAliveDaemon {
 	}
 
 	private void init() {
-		keepAliveTimer = new Timer(KEEP_ALIVE_INTERVAL, new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				doKeepAlive();
-			}
-		});
+		keepAliveTimer = new Timer(KEEP_ALIVE_INTERVAL, e -> doKeepAlive());
 		
-		keepAliveTimeoutTimer = new Timer(NETWORK_CONNECTION_TIME_OUT_CHECK_INTERVAL, new ActionListener(){
-			public void actionPerformed(ActionEvent e){
-				if(ClientCoreSDK.DEBUG)
-					Log.i(TAG, "【IMCORE-TCP】心跳[超时检查]线程执行中...");
+		keepAliveTimeoutTimer = new Timer(NETWORK_CONNECTION_TIME_OUT_CHECK_INTERVAL, e -> {
+			if(ClientCoreSDK.DEBUG)
+				Log.i(TAG, "【IMCORE-TCP】心跳[超时检查]线程执行中...");
 
-				doTimeoutCheck();
-			}
+			doTimeoutCheck();
 		});
 	}
 
