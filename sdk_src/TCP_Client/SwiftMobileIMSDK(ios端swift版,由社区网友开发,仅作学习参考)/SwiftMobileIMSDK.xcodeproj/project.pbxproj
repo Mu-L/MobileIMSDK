@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0407CEF126BE29A100135168 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CEF026BE29A100135168 /* UInt32+Extension.swift */; };
+		0407CEF426BE6B5E00135168 /* TCPFrameCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CEF326BE6B5E00135168 /* TCPFrameCodec.swift */; };
+		0407CEF726BE847F00135168 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CEF626BE847F00135168 /* ErrorCode.swift */; };
+		0407CEF926BEC53D00135168 /* LocalDataReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CEF826BEC53D00135168 /* LocalDataReceiver.swift */; };
+		0407CEFB26BEE91900135168 /* LocalSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CEFA26BEE91900135168 /* LocalSocketProvider.swift */; };
+		0407CEFD26BFD66700135168 /* KeepAliveDaemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CEFC26BFD66700135168 /* KeepAliveDaemon.swift */; };
+		0407CEFF26BFFC2000135168 /* LocalDataSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CEFE26BFFC2000135168 /* LocalDataSender.swift */; };
+		0407CF0126BFFFDF00135168 /* QoS4SendDaemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF0026BFFFDF00135168 /* QoS4SendDaemon.swift */; };
+		0407CF0326C0006700135168 /* QoS4ReceiveDaemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF0226C0006700135168 /* QoS4ReceiveDaemon.swift */; };
+		0407CF0526C4137600135168 /* KickoutCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF0426C4137600135168 /* KickoutCodeType.swift */; };
+		0407CF0726C75C6C00135168 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF0626C75C6C00135168 /* LoginController.swift */; };
+		0407CF0D26C767FE00135168 /* DefineConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF0A26C767FE00135168 /* DefineConstant.swift */; };
+		0407CF0E26C767FE00135168 /* DefineUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF0B26C767FE00135168 /* DefineUIColor.swift */; };
+		0407CF0F26C767FE00135168 /* DefineUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF0C26C767FE00135168 /* DefineUIFont.swift */; };
+		0407CF1526C768FE00135168 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1026C768FE00135168 /* UIImage+Extension.swift */; };
+		0407CF1626C768FE00135168 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1126C768FE00135168 /* UIButton+Extension.swift */; };
+		0407CF1726C768FE00135168 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1226C768FE00135168 /* UIImageView+Extension.swift */; };
+		0407CF1826C768FE00135168 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1326C768FE00135168 /* UITextField+Extension.swift */; };
+		0407CF1926C768FE00135168 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1426C768FE00135168 /* UIView+Extension.swift */; };
+		0407CF1B26C7690900135168 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1A26C7690900135168 /* String+Extension.swift */; };
+		0407CF1D26C777F000135168 /* IMClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1C26C777F000135168 /* IMClientManager.swift */; };
+		0407CF2026C7BF3100135168 /* ChatBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF1F26C7BF3100135168 /* ChatBaseProtocol.swift */; };
+		0407CF2226C7C2A200135168 /* ChatMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2126C7C2A200135168 /* ChatMessageProtocol.swift */; };
+		0407CF2426C7C32200135168 /* MessageQoSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2326C7C32200135168 /* MessageQoSProtocol.swift */; };
+		0407CF2626CC810000135168 /* ProgressHUDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2526CC810000135168 /* ProgressHUDUtils.swift */; };
+		0407CF2826CDD9F100135168 /* PopupDialogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2726CDD9F100135168 /* PopupDialogUtils.swift */; };
+		0407CF2A26CF2B1400135168 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2926CF2B1400135168 /* MainController.swift */; };
+		0407CF2C26D001C400135168 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2B26D001C400135168 /* MessageCell.swift */; };
+		0407CF2E26D0C4B800135168 /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2D26D0C4B800135168 /* MessageData.swift */; };
+		0407CF3026D1E43800135168 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF2F26D1E43800135168 /* Notification+Extension.swift */; };
+		04655F7E26AF988800273A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655F7D26AF988800273A7E /* AppDelegate.swift */; };
+		04655F8026AF988800273A7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655F7F26AF988800273A7E /* SceneDelegate.swift */; };
+		04655F8526AF988800273A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04655F8326AF988800273A7E /* Main.storyboard */; };
+		04655F8726AF988900273A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04655F8626AF988900273A7E /* Assets.xcassets */; };
+		04655F8A26AF988900273A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04655F8826AF988900273A7E /* LaunchScreen.storyboard */; };
+		04655F9726B18B0000273A7E /* ToolKits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655F9626B18B0000273A7E /* ToolKits.swift */; };
+		04655F9B26B1940C00273A7E /* TCPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655F9A26B1940C00273A7E /* TCPUtils.swift */; };
+		04655FBD26B6837E00273A7E /* KickoutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBC26B6837E00273A7E /* KickoutInfo.swift */; };
+		04655FC026B6841B00273A7E /* ExportLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FBF26B6841B00273A7E /* ExportLib.swift */; };
+		04655FC426B6897600273A7E /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FC326B6897600273A7E /* ErrorResponse.swift */; };
+		04655FC626B689BE00273A7E /* KeepAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FC526B689BE00273A7E /* KeepAlive.swift */; };
+		04655FC826B689F300273A7E /* KeepAliveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FC726B689F300273A7E /* KeepAliveResponse.swift */; };
+		04655FCA26B68A2A00273A7E /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FC926B68A2A00273A7E /* LoginInfo.swift */; };
+		04655FCC26B68A7A00273A7E /* LoginInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FCB26B68A7A00273A7E /* LoginInfoResponse.swift */; };
+		04655FCE26B68B3A00273A7E /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FCD26B68B3A00273A7E /* Protocol.swift */; };
+		04655FD026B68E5000273A7E /* ProtocolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FCF26B68E5000273A7E /* ProtocolType.swift */; };
+		04655FD226B6963700273A7E /* ProtocolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FD126B6963700273A7E /* ProtocolFactory.swift */; };
+		04655FD526B6A25D00273A7E /* ClientCoreSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FD426B6A25D00273A7E /* ClientCoreSDK.swift */; };
+		04655FD726B82EBC00273A7E /* ConfigEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FD626B82EBC00273A7E /* ConfigEntity.swift */; };
+		04655FD926B82EE100273A7E /* SenseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FD826B82EE100273A7E /* SenseMode.swift */; };
+		04655FDB26B835E200273A7E /* ChatBaseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FDA26B835E200273A7E /* ChatBaseEvent.swift */; };
+		04655FDD26B8368300273A7E /* ChatMessageEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FDC26B8368300273A7E /* ChatMessageEvent.swift */; };
+		04655FDF26B8370200273A7E /* MessageQoSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FDE26B8370200273A7E /* MessageQoSEvent.swift */; };
+		04655FE126B8376600273A7E /* AutoReLoginDaemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FE026B8376600273A7E /* AutoReLoginDaemon.swift */; };
+		04655FE326B83F8900273A7E /* CompletionDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04655FE226B83F8900273A7E /* CompletionDefine.swift */; };
+		F715EED30634CD781CF8DBA5 /* Pods_SwiftMobileIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E380C9905A26DB97E6797F1 /* Pods_SwiftMobileIMSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0407CEF026BE29A100135168 /* UInt32+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt32+Extension.swift"; sourceTree = "<group>"; };
+		0407CEF326BE6B5E00135168 /* TCPFrameCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPFrameCodec.swift; sourceTree = "<group>"; };
+		0407CEF626BE847F00135168 /* ErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		0407CEF826BEC53D00135168 /* LocalDataReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataReceiver.swift; sourceTree = "<group>"; };
+		0407CEFA26BEE91900135168 /* LocalSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSocketProvider.swift; sourceTree = "<group>"; };
+		0407CEFC26BFD66700135168 /* KeepAliveDaemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAliveDaemon.swift; sourceTree = "<group>"; };
+		0407CEFE26BFFC2000135168 /* LocalDataSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSender.swift; sourceTree = "<group>"; };
+		0407CF0026BFFFDF00135168 /* QoS4SendDaemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoS4SendDaemon.swift; sourceTree = "<group>"; };
+		0407CF0226C0006700135168 /* QoS4ReceiveDaemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoS4ReceiveDaemon.swift; sourceTree = "<group>"; };
+		0407CF0426C4137600135168 /* KickoutCodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickoutCodeType.swift; sourceTree = "<group>"; };
+		0407CF0626C75C6C00135168 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		0407CF0A26C767FE00135168 /* DefineConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefineConstant.swift; sourceTree = "<group>"; };
+		0407CF0B26C767FE00135168 /* DefineUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefineUIColor.swift; sourceTree = "<group>"; };
+		0407CF0C26C767FE00135168 /* DefineUIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefineUIFont.swift; sourceTree = "<group>"; };
+		0407CF1026C768FE00135168 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		0407CF1126C768FE00135168 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		0407CF1226C768FE00135168 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		0407CF1326C768FE00135168 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		0407CF1426C768FE00135168 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0407CF1A26C7690900135168 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		0407CF1C26C777F000135168 /* IMClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMClientManager.swift; sourceTree = "<group>"; };
+		0407CF1F26C7BF3100135168 /* ChatBaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBaseProtocol.swift; sourceTree = "<group>"; };
+		0407CF2126C7C2A200135168 /* ChatMessageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageProtocol.swift; sourceTree = "<group>"; };
+		0407CF2326C7C32200135168 /* MessageQoSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageQoSProtocol.swift; sourceTree = "<group>"; };
+		0407CF2526CC810000135168 /* ProgressHUDUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUDUtils.swift; sourceTree = "<group>"; };
+		0407CF2726CDD9F100135168 /* PopupDialogUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDialogUtils.swift; sourceTree = "<group>"; };
+		0407CF2926CF2B1400135168 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		0407CF2B26D001C400135168 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		0407CF2D26D0C4B800135168 /* MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
+		0407CF2F26D1E43800135168 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		04655F7A26AF988800273A7E /* SwiftMobileIMSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMobileIMSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04655F7D26AF988800273A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04655F7F26AF988800273A7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04655F8426AF988800273A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04655F8626AF988900273A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04655F8926AF988900273A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04655F8B26AF988900273A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04655F9626B18B0000273A7E /* ToolKits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolKits.swift; sourceTree = "<group>"; };
+		04655F9A26B1940C00273A7E /* TCPUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPUtils.swift; sourceTree = "<group>"; };
+		04655F9C26B1958C00273A7E /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04655F9D26B1958C00273A7E /* HandyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04655FA326B1959300273A7E /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04655FBC26B6837E00273A7E /* KickoutInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickoutInfo.swift; sourceTree = "<group>"; };
+		04655FBF26B6841B00273A7E /* ExportLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportLib.swift; sourceTree = "<group>"; };
+		04655FC326B6897600273A7E /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		04655FC526B689BE00273A7E /* KeepAlive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAlive.swift; sourceTree = "<group>"; };
+		04655FC726B689F300273A7E /* KeepAliveResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAliveResponse.swift; sourceTree = "<group>"; };
+		04655FC926B68A2A00273A7E /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
+		04655FCB26B68A7A00273A7E /* LoginInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoResponse.swift; sourceTree = "<group>"; };
+		04655FCD26B68B3A00273A7E /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		04655FCF26B68E5000273A7E /* ProtocolType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolType.swift; sourceTree = "<group>"; };
+		04655FD126B6963700273A7E /* ProtocolFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolFactory.swift; sourceTree = "<group>"; };
+		04655FD426B6A25D00273A7E /* ClientCoreSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCoreSDK.swift; sourceTree = "<group>"; };
+		04655FD626B82EBC00273A7E /* ConfigEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigEntity.swift; sourceTree = "<group>"; };
+		04655FD826B82EE100273A7E /* SenseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseMode.swift; sourceTree = "<group>"; };
+		04655FDA26B835E200273A7E /* ChatBaseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBaseEvent.swift; sourceTree = "<group>"; };
+		04655FDC26B8368300273A7E /* ChatMessageEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageEvent.swift; sourceTree = "<group>"; };
+		04655FDE26B8370200273A7E /* MessageQoSEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageQoSEvent.swift; sourceTree = "<group>"; };
+		04655FE026B8376600273A7E /* AutoReLoginDaemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoReLoginDaemon.swift; sourceTree = "<group>"; };
+		04655FE226B83F8900273A7E /* CompletionDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionDefine.swift; sourceTree = "<group>"; };
+		12D566912F100868867A6F5E /* Pods-SwiftMobileIMSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMobileIMSDK.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMobileIMSDK/Pods-SwiftMobileIMSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		4E380C9905A26DB97E6797F1 /* Pods_SwiftMobileIMSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMobileIMSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFAF465C65AFF6ED06A42C2 /* Pods-SwiftMobileIMSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMobileIMSDK.release.xcconfig"; path = "Target Support Files/Pods-SwiftMobileIMSDK/Pods-SwiftMobileIMSDK.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04655F7726AF988800273A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F715EED30634CD781CF8DBA5 /* Pods_SwiftMobileIMSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0407CEF226BE6B4300135168 /* Codec */ = {
+			isa = PBXGroup;
+			children = (
+				0407CEF326BE6B5E00135168 /* TCPFrameCodec.swift */,
+			);
+			path = Codec;
+			sourceTree = "<group>";
+		};
+		0407CEF526BE729700135168 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0407CF1126C768FE00135168 /* UIButton+Extension.swift */,
+				0407CF1026C768FE00135168 /* UIImage+Extension.swift */,
+				0407CF1226C768FE00135168 /* UIImageView+Extension.swift */,
+				0407CF1326C768FE00135168 /* UITextField+Extension.swift */,
+				0407CF1426C768FE00135168 /* UIView+Extension.swift */,
+				0407CEF026BE29A100135168 /* UInt32+Extension.swift */,
+				0407CF1A26C7690900135168 /* String+Extension.swift */,
+				0407CF2F26D1E43800135168 /* Notification+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0407CF1E26C7BC7B00135168 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0407CF1F26C7BF3100135168 /* ChatBaseProtocol.swift */,
+				0407CF2126C7C2A200135168 /* ChatMessageProtocol.swift */,
+				0407CF2326C7C32200135168 /* MessageQoSProtocol.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		04655F7126AF988800273A7E = {
+			isa = PBXGroup;
+			children = (
+				04655F7C26AF988800273A7E /* SwiftMobileIMSDK */,
+				04655F7B26AF988800273A7E /* Products */,
+				2B11D1EBF90E08235C5B1366 /* Pods */,
+				1E3EB6A6D295F99C85A43814 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04655F7B26AF988800273A7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04655F7A26AF988800273A7E /* SwiftMobileIMSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04655F7C26AF988800273A7E /* SwiftMobileIMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0407CF1E26C7BC7B00135168 /* Delegate */,
+				0407CEF526BE729700135168 /* Extension */,
+				0407CEF226BE6B4300135168 /* Codec */,
+				04655FD326B6A24A00273A7E /* core */,
+				04655FBE26B683D900273A7E /* common */,
+				04655F9526B18AD600273A7E /* Event */,
+				04655F9426B18A3500273A7E /* Transfer */,
+				04655F9326B18A2800273A7E /* Protocol */,
+				04655F9126B18A1400273A7E /* Utils */,
+				04655F7D26AF988800273A7E /* AppDelegate.swift */,
+				04655F7F26AF988800273A7E /* SceneDelegate.swift */,
+				0407CF0626C75C6C00135168 /* LoginController.swift */,
+				0407CF2926CF2B1400135168 /* MainController.swift */,
+				0407CF2B26D001C400135168 /* MessageCell.swift */,
+				0407CF2D26D0C4B800135168 /* MessageData.swift */,
+				04655F8326AF988800273A7E /* Main.storyboard */,
+				0407CF1C26C777F000135168 /* IMClientManager.swift */,
+				04655F8826AF988900273A7E /* LaunchScreen.storyboard */,
+				04655F8626AF988900273A7E /* Assets.xcassets */,
+				04655F8B26AF988900273A7E /* Info.plist */,
+			);
+			path = SwiftMobileIMSDK;
+			sourceTree = "<group>";
+		};
+		04655F9126B18A1400273A7E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04655F9A26B1940C00273A7E /* TCPUtils.swift */,
+				04655F9626B18B0000273A7E /* ToolKits.swift */,
+				0407CF2526CC810000135168 /* ProgressHUDUtils.swift */,
+				0407CF2726CDD9F100135168 /* PopupDialogUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04655F9326B18A2800273A7E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0407CEF626BE847F00135168 /* ErrorCode.swift */,
+				04655FC326B6897600273A7E /* ErrorResponse.swift */,
+				04655FC526B689BE00273A7E /* KeepAlive.swift */,
+				04655FC726B689F300273A7E /* KeepAliveResponse.swift */,
+				04655FBC26B6837E00273A7E /* KickoutInfo.swift */,
+				0407CF0426C4137600135168 /* KickoutCodeType.swift */,
+				04655FC926B68A2A00273A7E /* LoginInfo.swift */,
+				04655FCB26B68A7A00273A7E /* LoginInfoResponse.swift */,
+				04655FCD26B68B3A00273A7E /* Protocol.swift */,
+				04655FD126B6963700273A7E /* ProtocolFactory.swift */,
+				04655FCF26B68E5000273A7E /* ProtocolType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		04655F9426B18A3500273A7E /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				04655FE026B8376600273A7E /* AutoReLoginDaemon.swift */,
+				0407CEFC26BFD66700135168 /* KeepAliveDaemon.swift */,
+				0407CEF826BEC53D00135168 /* LocalDataReceiver.swift */,
+				0407CEFE26BFFC2000135168 /* LocalDataSender.swift */,
+				0407CEFA26BEE91900135168 /* LocalSocketProvider.swift */,
+				0407CF0226C0006700135168 /* QoS4ReceiveDaemon.swift */,
+				0407CF0026BFFFDF00135168 /* QoS4SendDaemon.swift */,
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		04655F9526B18AD600273A7E /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				04655FDA26B835E200273A7E /* ChatBaseEvent.swift */,
+				04655FDC26B8368300273A7E /* ChatMessageEvent.swift */,
+				04655FDE26B8370200273A7E /* MessageQoSEvent.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		04655FBE26B683D900273A7E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0407CF0A26C767FE00135168 /* DefineConstant.swift */,
+				0407CF0B26C767FE00135168 /* DefineUIColor.swift */,
+				0407CF0C26C767FE00135168 /* DefineUIFont.swift */,
+				04655FBF26B6841B00273A7E /* ExportLib.swift */,
+				04655FE226B83F8900273A7E /* CompletionDefine.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		04655FD326B6A24A00273A7E /* core */ = {
+			isa = PBXGroup;
+			children = (
+				04655FD426B6A25D00273A7E /* ClientCoreSDK.swift */,
+				04655FD626B82EBC00273A7E /* ConfigEntity.swift */,
+				04655FD826B82EE100273A7E /* SenseMode.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		1E3EB6A6D295F99C85A43814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04655FA326B1959300273A7E /* Reachability.framework */,
+				04655F9C26B1958C00273A7E /* CocoaAsyncSocket.framework */,
+				04655F9D26B1958C00273A7E /* HandyJSON.framework */,
+				4E380C9905A26DB97E6797F1 /* Pods_SwiftMobileIMSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B11D1EBF90E08235C5B1366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12D566912F100868867A6F5E /* Pods-SwiftMobileIMSDK.debug.xcconfig */,
+				DDFAF465C65AFF6ED06A42C2 /* Pods-SwiftMobileIMSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04655F7926AF988800273A7E /* SwiftMobileIMSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04655F8E26AF988900273A7E /* Build configuration list for PBXNativeTarget "SwiftMobileIMSDK" */;
+			buildPhases = (
+				5E57C2307C9465576523D705 /* [CP] Check Pods Manifest.lock */,
+				04655F7626AF988800273A7E /* Sources */,
+				04655F7726AF988800273A7E /* Frameworks */,
+				04655F7826AF988800273A7E /* Resources */,
+				A7DF95AC9D19E35E0BCDE06D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMobileIMSDK;
+			productName = SwiftMobileIMSDK;
+			productReference = 04655F7A26AF988800273A7E /* SwiftMobileIMSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04655F7226AF988800273A7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					04655F7926AF988800273A7E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 04655F7526AF988800273A7E /* Build configuration list for PBXProject "SwiftMobileIMSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04655F7126AF988800273A7E;
+			productRefGroup = 04655F7B26AF988800273A7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04655F7926AF988800273A7E /* SwiftMobileIMSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04655F7826AF988800273A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04655F8A26AF988900273A7E /* LaunchScreen.storyboard in Resources */,
+				04655F8726AF988900273A7E /* Assets.xcassets in Resources */,
+				04655F8526AF988800273A7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E57C2307C9465576523D705 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMobileIMSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7DF95AC9D19E35E0BCDE06D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMobileIMSDK/Pods-SwiftMobileIMSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMobileIMSDK/Pods-SwiftMobileIMSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftMobileIMSDK/Pods-SwiftMobileIMSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04655F7626AF988800273A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04655FCA26B68A2A00273A7E /* LoginInfo.swift in Sources */,
+				04655FD526B6A25D00273A7E /* ClientCoreSDK.swift in Sources */,
+				0407CF0526C4137600135168 /* KickoutCodeType.swift in Sources */,
+				0407CEF726BE847F00135168 /* ErrorCode.swift in Sources */,
+				04655FCC26B68A7A00273A7E /* LoginInfoResponse.swift in Sources */,
+				0407CF1826C768FE00135168 /* UITextField+Extension.swift in Sources */,
+				04655FD026B68E5000273A7E /* ProtocolType.swift in Sources */,
+				04655FBD26B6837E00273A7E /* KickoutInfo.swift in Sources */,
+				04655F7E26AF988800273A7E /* AppDelegate.swift in Sources */,
+				04655FD726B82EBC00273A7E /* ConfigEntity.swift in Sources */,
+				0407CF2626CC810000135168 /* ProgressHUDUtils.swift in Sources */,
+				0407CF2C26D001C400135168 /* MessageCell.swift in Sources */,
+				04655FDD26B8368300273A7E /* ChatMessageEvent.swift in Sources */,
+				0407CF2E26D0C4B800135168 /* MessageData.swift in Sources */,
+				04655FC826B689F300273A7E /* KeepAliveResponse.swift in Sources */,
+				0407CF1926C768FE00135168 /* UIView+Extension.swift in Sources */,
+				04655FC026B6841B00273A7E /* ExportLib.swift in Sources */,
+				04655FC426B6897600273A7E /* ErrorResponse.swift in Sources */,
+				04655FE326B83F8900273A7E /* CompletionDefine.swift in Sources */,
+				04655FDB26B835E200273A7E /* ChatBaseEvent.swift in Sources */,
+				0407CF1726C768FE00135168 /* UIImageView+Extension.swift in Sources */,
+				0407CEF926BEC53D00135168 /* LocalDataReceiver.swift in Sources */,
+				0407CF3026D1E43800135168 /* Notification+Extension.swift in Sources */,
+				04655FD226B6963700273A7E /* ProtocolFactory.swift in Sources */,
+				0407CEF426BE6B5E00135168 /* TCPFrameCodec.swift in Sources */,
+				0407CF2826CDD9F100135168 /* PopupDialogUtils.swift in Sources */,
+				04655FC626B689BE00273A7E /* KeepAlive.swift in Sources */,
+				0407CF2226C7C2A200135168 /* ChatMessageProtocol.swift in Sources */,
+				0407CF1B26C7690900135168 /* String+Extension.swift in Sources */,
+				04655F9726B18B0000273A7E /* ToolKits.swift in Sources */,
+				0407CF0126BFFFDF00135168 /* QoS4SendDaemon.swift in Sources */,
+				04655F8026AF988800273A7E /* SceneDelegate.swift in Sources */,
+				0407CEFF26BFFC2000135168 /* LocalDataSender.swift in Sources */,
+				0407CF1626C768FE00135168 /* UIButton+Extension.swift in Sources */,
+				0407CF2426C7C32200135168 /* MessageQoSProtocol.swift in Sources */,
+				04655F9B26B1940C00273A7E /* TCPUtils.swift in Sources */,
+				0407CF0F26C767FE00135168 /* DefineUIFont.swift in Sources */,
+				04655FDF26B8370200273A7E /* MessageQoSEvent.swift in Sources */,
+				0407CEF126BE29A100135168 /* UInt32+Extension.swift in Sources */,
+				0407CF2A26CF2B1400135168 /* MainController.swift in Sources */,
+				0407CF0E26C767FE00135168 /* DefineUIColor.swift in Sources */,
+				0407CEFB26BEE91900135168 /* LocalSocketProvider.swift in Sources */,
+				0407CF2026C7BF3100135168 /* ChatBaseProtocol.swift in Sources */,
+				0407CF0326C0006700135168 /* QoS4ReceiveDaemon.swift in Sources */,
+				0407CF1D26C777F000135168 /* IMClientManager.swift in Sources */,
+				04655FD926B82EE100273A7E /* SenseMode.swift in Sources */,
+				0407CF1526C768FE00135168 /* UIImage+Extension.swift in Sources */,
+				0407CF0D26C767FE00135168 /* DefineConstant.swift in Sources */,
+				04655FCE26B68B3A00273A7E /* Protocol.swift in Sources */,
+				04655FE126B8376600273A7E /* AutoReLoginDaemon.swift in Sources */,
+				0407CEFD26BFD66700135168 /* KeepAliveDaemon.swift in Sources */,
+				0407CF0726C75C6C00135168 /* LoginController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04655F8326AF988800273A7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04655F8426AF988800273A7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04655F8826AF988900273A7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04655F8926AF988900273A7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04655F8C26AF988900273A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04655F8D26AF988900273A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04655F8F26AF988900273A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D566912F100868867A6F5E /* Pods-SwiftMobileIMSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UNQ99S46PF;
+				INFOPLIST_FILE = SwiftMobileIMSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iconfidenceapp.SwiftMobileIMSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04655F9026AF988900273A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDFAF465C65AFF6ED06A42C2 /* Pods-SwiftMobileIMSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UNQ99S46PF;
+				INFOPLIST_FILE = SwiftMobileIMSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iconfidenceapp.SwiftMobileIMSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04655F7526AF988800273A7E /* Build configuration list for PBXProject "SwiftMobileIMSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04655F8C26AF988900273A7E /* Debug */,
+				04655F8D26AF988900273A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04655F8E26AF988900273A7E /* Build configuration list for PBXNativeTarget "SwiftMobileIMSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04655F8F26AF988900273A7E /* Debug */,
+				04655F9026AF988900273A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04655F7226AF988800273A7E /* Project object */;
+}
